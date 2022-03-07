@@ -48,7 +48,6 @@ const drawContainer = (containerSize, childSize, numberOfChildren) => {
             child.style.background = randomRgbColor();
             child.hoverTimer = setTimeout(() => {
                 child.remove();
-                actualNumberOfChildren--; 
             }, 2000);
         };
         child.onmouseout = () => {
